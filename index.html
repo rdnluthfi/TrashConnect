@@ -1956,6 +1956,228 @@ color:#062D24;
 background:#19A65A;
 }
 </style>
+
+<style id="premium-dashboard-revision">
+
+/* ===== KPI SECTION SESUAI MOCKUP ===== */
+.stats-card{
+background:linear-gradient(135deg,#062D24 0%,#0A4436 100%) !important;
+border-radius:42px !important;
+padding:38px !important;
+grid-template-columns:repeat(4,1fr) !important;
+gap:24px !important;
+box-shadow:0 30px 80px rgba(6,45,36,.20) !important;
+}
+
+.stat{
+background:rgba(255,255,255,.08) !important;
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.15) !important;
+border-radius:28px !important;
+padding:24px !important;
+min-height:220px;
+position:relative;
+overflow:hidden;
+}
+
+.stat::after{
+content:"";
+position:absolute;
+right:-30px;
+bottom:-30px;
+width:120px;
+height:120px;
+border-radius:50%;
+background:radial-gradient(rgba(25,166,90,.20),transparent 70%);
+}
+
+.stat b{
+color:#fff !important;
+font-size:58px !important;
+font-weight:900 !important;
+}
+
+.stat span{
+color:rgba(255,255,255,.88) !important;
+font-size:16px !important;
+line-height:1.5 !important;
+}
+
+.stat-icon{
+width:72px !important;
+height:72px !important;
+border-radius:22px !important;
+background:linear-gradient(135deg,#19A65A,#39D97A) !important;
+color:white !important;
+box-shadow:0 15px 35px rgba(25,166,90,.35);
+}
+
+/* ===== MASALAH OPERASIONAL ===== */
+.section .grid-3 .card{
+background:#ffffff !important;
+border-radius:28px !important;
+padding:30px !important;
+border:none !important;
+box-shadow:0 16px 40px rgba(6,45,36,.08) !important;
+position:relative;
+overflow:hidden;
+}
+
+.section .grid-3 .card::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+bottom:0;
+width:6px;
+background:#19A65A;
+}
+
+.section .grid-3 .card::after{
+content:"";
+position:absolute;
+right:18px;
+top:18px;
+font-size:64px;
+font-weight:900;
+color:rgba(6,45,36,.07);
+}
+
+.section .grid-3 .card:nth-child(1)::after{content:"01";}
+.section .grid-3 .card:nth-child(2)::after{content:"02";}
+.section .grid-3 .card:nth-child(3)::after{content:"03";}
+
+.section .grid-3 .card h3{
+font-size:20px !important;
+padding-bottom:14px;
+margin-bottom:16px;
+position:relative;
+}
+
+.section .grid-3 .card h3::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:42px;
+height:3px;
+background:#19A65A;
+border-radius:999px;
+}
+
+.section .grid-3 .card p{
+font-size:15px !important;
+line-height:1.9 !important;
+}
+
+.section .grid-3 .card .icon{
+background:#EAF8F0 !important;
+width:68px !important;
+height:68px !important;
+border-radius:20px !important;
+}
+
+@media(max-width:900px){
+.stats-card{
+grid-template-columns:1fr !important;
+}
+}
+</style>
+
+
+<style id="mobile-kpi-fix">
+@media (max-width:768px){
+
+  .stats-card{
+      grid-template-columns:repeat(2,1fr) !important;
+      gap:12px !important;
+      padding:18px !important;
+      border-radius:26px !important;
+  }
+
+  .stat{
+      min-height:140px !important;
+      padding:18px !important;
+      border-radius:22px !important;
+  }
+
+  .stat-icon{
+      width:52px !important;
+      height:52px !important;
+      border-radius:16px !important;
+      margin-bottom:12px !important;
+  }
+
+  .stat b{
+      font-size:38px !important;
+      line-height:1 !important;
+  }
+
+  .stat span,
+  .stat p{
+      font-size:13px !important;
+      line-height:1.4 !important;
+  }
+}
+</style>
+
+
+<style id="final-v2-premium">
+/* KPI PREMIUM */
+.stats-strip{margin-bottom:80px!important}
+.stats-card{
+background:linear-gradient(135deg,#062D24,#0A4436)!important;
+grid-template-columns:repeat(4,1fr)!important;
+gap:20px!important;
+padding:30px!important;
+border-radius:36px!important;
+border:none!important;
+box-shadow:0 30px 80px rgba(6,45,36,.18)!important;
+}
+.stat{
+background:rgba(255,255,255,.08)!important;
+border:1px solid rgba(255,255,255,.12)!important;
+border-radius:24px!important;
+min-height:180px!important;
+}
+.stat b{color:#fff!important;font-size:46px!important}
+.stat span{color:rgba(255,255,255,.86)!important}
+.stat-icon{background:linear-gradient(135deg,#19A65A,#39D97A)!important}
+
+/* PROBLEM CARDS */
+.grid-3 .card{
+border:none!important;
+border-radius:28px!important;
+box-shadow:0 16px 40px rgba(6,45,36,.08)!important;
+position:relative!important;
+padding:28px!important;
+}
+.grid-3 .card:before{
+content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:#19A65A;
+}
+.grid-3 .card:nth-child(1):after{content:"01"}
+.grid-3 .card:nth-child(2):after{content:"02"}
+.grid-3 .card:nth-child(3):after{content:"03"}
+.grid-3 .card:after{
+position:absolute;right:18px;top:12px;font-size:56px;font-weight:900;color:rgba(6,45,36,.06)
+}
+.grid-3 .card h3{padding-bottom:12px;position:relative}
+.grid-3 .card h3:after{
+content:"";position:absolute;left:0;bottom:0;width:44px;height:3px;background:#19A65A;border-radius:999px
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.stats-card{
+grid-template-columns:repeat(2,1fr)!important;
+gap:12px!important;
+padding:18px!important;
+}
+.stat{min-height:135px!important;padding:16px!important}
+.stat b{font-size:34px!important}
+.stats-strip{margin-bottom:40px!important}
+}
+</style>
 </head>
 <body>
 <div class="grain"></div>
@@ -2423,7 +2645,7 @@ background:#19A65A;
 <div class="step" data-current-step="2" id="step2">
 <div class="summary-grid">
 <div class="summary-card"><h4>Ringkasan Pesanan</h4><div id="summaryItems"></div><div class="total"><span>Total</span><span id="summaryTotal">Rp0</span></div></div>
-<div class="summary-card"><h4>Data Penjemputan</h4><p id="summaryData" style="color:var(--muted);line-height:1.75;font-weight:600"></p><select id="metode" style="margin-top:14px"><option>Konfirmasi manual WhatsApp</option><option>Bayar di tempat</option><option>Transfer bank</option></select></div>
+<div class="summary-card"><h4>Data Penjemputan</h4><p id="summaryData" style="color:var(--muted);line-height:1.75;font-weight:600"></p><select id="metode" style="margin-top:14px"><option>Konfirmasi manual WhatsApp</option><option>Bayar di tempat</option></select></div>
 </div>
 <div class="hero-actions" style="justify-content:space-between"><button class="btn btn-soft" onclick="goStep(1)">Kembali</button><button class="btn btn-green" onclick="submitOrder()">Kirim Pesanan</button></div>
 </div>
@@ -2438,7 +2660,7 @@ background:#19A65A;
  const packages = {
  sekali:{name:"Paket Sekali Jemput",price:35000,label:"Rp35.000/order",badge:"Mendadak",desc:"Pengangkutan satu kali untuk kebutuhan cepat dan fleksibel.",features:["1 kali penjemputan","Jadwal fleksibel","Konfirmasi admin","Cocok usaha kecil"],popular:false},
  mingguan:{name:"Paket Mingguan",price:130000,label:"Rp130.000/Minggu",badge:"Kedai kopi",desc:"Pengangkutan rutin mingguan untuk tempat makan kecil dan kedai kopi.",features:["4 kali penjemputan","Jadwal tetap","Mitra terdekat","Dukungan WhatsApp"],popular:false},
- basic:{name:"Paket Bulanan Basic",price:500000,label:"Rp500.000/bulan",badge:"Terpopuler",desc:"Langganan bulanan untuk restoran kecil-menengah yang butuh layanan konsisten.",features:["16 kali penjemputan","Laporan layanan","Prioritas jadwal","Admin support"],popular:true},
+ basic:{name:"Paket Bulanan Basic",price:500000,label:"Rp 540.000 / bulan",badge:"Terpopuler",desc:"Langganan bulanan untuk restoran kecil-menengah yang butuh layanan konsisten.",features:["16 kali penjemputan","Laporan layanan","Prioritas jadwal","Admin support"],popular:true},
  trial:{name:"Paket Trial F&B",price:0,label:"Gratis",badge:"Free trial",desc:"Paket percobaan untuk owner F&B sebelum berlangganan.",features:["1 kali penjemputan","Konsultasi jadwal","Edukasi platform","Konfirmasi WhatsApp"],popular:false}
  };
  let cart = {};
